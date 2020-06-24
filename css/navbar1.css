@@ -1,0 +1,232 @@
+/* sgs.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.sgs-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.sgs-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.sgs-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.sgs-table,.sgs-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.sgs-table-all{border:1px solid #ccc}
+.sgs-bordered tr,.sgs-table-all tr{border-bottom:1px solid #ddd}.sgs-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.sgs-table-all tr:nth-child(odd){background-color:#fff}.sgs-table-all tr:nth-child(even){background-color:#f1f1f1}
+.sgs-hoverable tbody tr:hover,.sgs-ul.sgs-hoverable li:hover{background-color:#ccc}.sgs-centered tr th,.sgs-centered tr td{text-align:center}
+.sgs-table td,.sgs-table th,.sgs-table-all td,.sgs-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.sgs-table th:first-child,.sgs-table td:first-child,.sgs-table-all th:first-child,.sgs-table-all td:first-child{padding-left:16px}
+.sgs-btn,.sgs-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.sgs-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.sgs-btn,.sgs-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.sgs-disabled,.sgs-btn:disabled,.sgs-button:disabled{cursor:not-allowed;opacity:0.3}.sgs-disabled *,:disabled *{pointer-events:none}
+.sgs-btn.sgs-disabled:hover,.sgs-btn:disabled:hover{box-shadow:none}
+.sgs-badge,.sgs-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.sgs-badge{border-radius:50%}
+.sgs-ul{list-style-type:none;padding:0;margin:0}.sgs-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.sgs-ul li:last-child{border-bottom:none}
+.sgs-tooltip,.sgs-display-container{position:relative}.sgs-tooltip .sgs-text{display:none}.sgs-tooltip:hover .sgs-text{display:inline-block}
+.sgs-ripple:active{opacity:0.5}.sgs-ripple{transition:opacity 0s}
+.sgs-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.sgs-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.sgs-dropdown-click,.sgs-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.sgs-dropdown-hover:hover .sgs-dropdown-content{display:block}
+.sgs-dropdown-hover:first-child,.sgs-dropdown-click:hover{background-color:#ccc;color:#000}
+.sgs-dropdown-hover:hover > .sgs-button:first-child,.sgs-dropdown-click:hover > .sgs-button:first-child{background-color:#ccc;color:#000}
+.sgs-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.sgs-check,.sgs-radio{width:24px;height:24px;position:relative;top:6px}
+.sgs-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.sgs-bar-block .sgs-dropdown-hover,.sgs-bar-block .sgs-dropdown-click{width:100%}
+.sgs-bar-block .sgs-dropdown-hover .sgs-dropdown-content,.sgs-bar-block .sgs-dropdown-click .sgs-dropdown-content{min-width:100%}
+.sgs-bar-block .sgs-dropdown-hover .sgs-button,.sgs-bar-block .sgs-dropdown-click .sgs-button{width:100%;text-align:left;padding:8px 16px}
+.sgs-main,#main{transition:margin-left .4s}
+.sgs-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.sgs-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.sgs-bar{width:100%;overflow:hidden}.sgs-center .sgs-bar{display:inline-block;width:auto}
+.sgs-bar .sgs-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.sgs-bar .sgs-dropdown-hover,.sgs-bar .sgs-dropdown-click{position:static;float:left}
+.sgs-bar .sgs-button{white-space:normal}
+.sgs-bar-block .sgs-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.sgs-bar-block.sgs-center .sgs-bar-item{text-align:center}.sgs-block{display:block;width:100%}
+.sgs-responsive{display:block;overflow-x:auto}
+.sgs-container:after,.sgs-container:before,.sgs-panel:after,.sgs-panel:before,.sgs-row:after,.sgs-row:before,.sgs-row-padding:after,.sgs-row-padding:before,
+.sgs-cell-row:before,.sgs-cell-row:after,.sgs-clear:after,.sgs-clear:before,.sgs-bar:before,.sgs-bar:after{content:"";display:table;clear:both}
+.sgs-col,.sgs-half,.sgs-third,.sgs-twothird,.sgs-threequarter,.sgs-quarter{float:left;width:100%}
+.sgs-col.s1{width:8.33333%}.sgs-col.s2{width:16.66666%}.sgs-col.s3{width:24.99999%}.sgs-col.s4{width:33.33333%}
+.sgs-col.s5{width:41.66666%}.sgs-col.s6{width:49.99999%}.sgs-col.s7{width:58.33333%}.sgs-col.s8{width:66.66666%}
+.sgs-col.s9{width:74.99999%}.sgs-col.s10{width:83.33333%}.sgs-col.s11{width:91.66666%}.sgs-col.s12{width:99.99999%}
+@media (min-width:601px){.sgs-col.m1{width:8.33333%}.sgs-col.m2{width:16.66666%}.sgs-col.m3,.sgs-quarter{width:24.99999%}.sgs-col.m4,.sgs-third{width:33.33333%}
+.sgs-col.m5{width:41.66666%}.sgs-col.m6,.sgs-half{width:49.99999%}.sgs-col.m7{width:58.33333%}.sgs-col.m8,.sgs-twothird{width:66.66666%}
+.sgs-col.m9,.sgs-threequarter{width:74.99999%}.sgs-col.m10{width:83.33333%}.sgs-col.m11{width:91.66666%}.sgs-col.m12{width:99.99999%}}
+@media (min-width:993px){.sgs-col.l1{width:8.33333%}.sgs-col.l2{width:16.66666%}.sgs-col.l3{width:24.99999%}.sgs-col.l4{width:33.33333%}
+.sgs-col.l5{width:41.66666%}.sgs-col.l6{width:49.99999%}.sgs-col.l7{width:58.33333%}.sgs-col.l8{width:66.66666%}
+.sgs-col.l9{width:74.99999%}.sgs-col.l10{width:83.33333%}.sgs-col.l11{width:91.66666%}.sgs-col.l12{width:99.99999%}}
+.sgs-rest{overflow:hidden}.sgs-stretch{margin-left:-16px;margin-right:-16px}
+.sgs-content,.sgs-auto{margin-left:auto;margin-right:auto}.sgs-content{max-width:980px}.sgs-auto{max-width:1140px}
+.sgs-cell-row{display:table;width:100%}.sgs-cell{display:table-cell}
+.sgs-cell-top{vertical-align:top}.sgs-cell-middle{vertical-align:middle}.sgs-cell-bottom{vertical-align:bottom}
+.sgs-hide{display:none!important}.sgs-show-block,.sgs-show{display:block!important}.sgs-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.sgs-auto{max-width:95%}}
+@media (max-width:600px){.sgs-modal-content{margin:0 10px;width:auto!important}.sgs-modal{padding-top:30px}
+.sgs-dropdown-hover.sgs-mobile .sgs-dropdown-content,.sgs-dropdown-click.sgs-mobile .sgs-dropdown-content{position:relative}	
+.sgs-hide-small{display:none!important}.sgs-mobile{display:block;width:100%!important}.sgs-bar-item.sgs-mobile,.sgs-dropdown-hover.sgs-mobile,.sgs-dropdown-click.sgs-mobile{text-align:center}
+.sgs-dropdown-hover.sgs-mobile,.sgs-dropdown-hover.sgs-mobile .sgs-btn,.sgs-dropdown-hover.sgs-mobile .sgs-button,.sgs-dropdown-click.sgs-mobile,.sgs-dropdown-click.sgs-mobile .sgs-btn,.sgs-dropdown-click.sgs-mobile .sgs-button{width:100%}}
+@media (max-width:768px){.sgs-modal-content{width:500px}.sgs-modal{padding-top:50px}}
+@media (min-width:993px){.sgs-modal-content{width:900px}.sgs-hide-large{display:none!important}.sgs-sidebar.sgs-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.sgs-hide-medium{display:none!important}}
+@media (max-width:992px){.sgs-sidebar.sgs-collapse{display:none}.sgs-main{margin-left:0!important;margin-right:0!important}.sgs-auto{max-width:100%}}
+.sgs-top,.sgs-bottom{position:fixed;width:100%;z-index:1}.sgs-top{top:0}.sgs-bottom{bottom:0}
+.sgs-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.sgs-display-topleft{position:absolute;left:0;top:0}.sgs-display-topright{position:absolute;right:0;top:0}
+.sgs-display-bottomleft{position:absolute;left:0;bottom:0}.sgs-display-bottomright{position:absolute;right:0;bottom:0}
+.sgs-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.sgs-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.sgs-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.sgs-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.sgs-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.sgs-display-container:hover .sgs-display-hover{display:block}.sgs-display-container:hover span.sgs-display-hover{display:inline-block}.sgs-display-hover{display:none}
+.sgs-display-position{position:absolute}
+.sgs-circle{border-radius:50%}
+.sgs-round-small{border-radius:2px}.sgs-round,.sgs-round-medium{border-radius:4px}.sgs-round-large{border-radius:8px}.sgs-round-xlarge{border-radius:16px}.sgs-round-xxlarge{border-radius:32px}
+.sgs-row-padding,.sgs-row-padding>.sgs-half,.sgs-row-padding>.sgs-third,.sgs-row-padding>.sgs-twothird,.sgs-row-padding>.sgs-threequarter,.sgs-row-padding>.sgs-quarter,.sgs-row-padding>.sgs-col{padding:0 8px}
+.sgs-container,.sgs-panel{padding:0.01em 16px}.sgs-panel{margin-top:16px;margin-bottom:16px}
+.sgs-code,.sgs-codespan{font-family:Consolas,"courier new";font-size:16px}
+.sgs-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.sgs-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.sgs-card,.sgs-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.sgs-card-4,.sgs-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.sgs-spin{animation:sgs-spin 2s infinite linear}@keyframes sgs-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.sgs-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.sgs-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.sgs-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.sgs-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.sgs-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.sgs-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.sgs-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.sgs-animate-input{transition:width 0.4s ease-in-out}.sgs-animate-input:focus{width:100%!important}
+.sgs-opacity,.sgs-hover-opacity:hover{opacity:0.60}.sgs-opacity-off,.sgs-hover-opacity-off:hover{opacity:1}
+.sgs-opacity-max{opacity:0.25}.sgs-opacity-min{opacity:0.75}
+.sgs-greyscale-max,.sgs-grayscale-max,.sgs-hover-greyscale:hover,.sgs-hover-grayscale:hover{filter:grayscale(100%)}
+.sgs-greyscale,.sgs-grayscale{filter:grayscale(75%)}.sgs-greyscale-min,.sgs-grayscale-min{filter:grayscale(50%)}
+.sgs-sepia{filter:sepia(75%)}.sgs-sepia-max,.sgs-hover-sepia:hover{filter:sepia(100%)}.sgs-sepia-min{filter:sepia(50%)}
+.sgs-tiny{font-size:10px!important}.sgs-small{font-size:12px!important}.sgs-medium{font-size:15px!important}.sgs-large{font-size:18px!important}
+.sgs-xlarge{font-size:24px!important}.sgs-xxlarge{font-size:36px!important}.sgs-xxxlarge{font-size:48px!important}.sgs-jumbo{font-size:64px!important}
+.sgs-left-align{text-align:left!important}.sgs-right-align{text-align:right!important}.sgs-justify{text-align:justify!important}.sgs-center{text-align:center!important}
+.sgs-border-0{border:0!important}.sgs-border{border:1px solid #ccc!important}
+.sgs-border-top{border-top:1px solid #ccc!important}.sgs-border-bottom{border-bottom:1px solid #ccc!important}
+.sgs-border-left{border-left:1px solid #ccc!important}.sgs-border-right{border-right:1px solid #ccc!important}
+.sgs-topbar{border-top:6px solid #ccc!important}.sgs-bottombar{border-bottom:6px solid #ccc!important}
+.sgs-leftbar{border-left:6px solid #ccc!important}.sgs-rightbar{border-right:6px solid #ccc!important}
+.sgs-section,.sgs-code{margin-top:16px!important;margin-bottom:16px!important}
+.sgs-margin{margin:16px!important}.sgs-margin-top{margin-top:16px!important}.sgs-margin-bottom{margin-bottom:16px!important}
+.sgs-margin-left{margin-left:16px!important}.sgs-margin-right{margin-right:16px!important}
+.sgs-padding-small{padding:4px 8px!important}.sgs-padding{padding:8px 16px!important}.sgs-padding-large{padding:12px 24px!important}
+.sgs-padding-16{padding-top:16px!important;padding-bottom:16px!important}.sgs-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.sgs-padding-32{padding-top:32px!important;padding-bottom:32px!important}.sgs-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.sgs-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.sgs-left{float:left!important}.sgs-right{float:right!important}
+.sgs-button:hover{color:#000!important;background-color:#ccc!important}
+.sgs-transparent,.sgs-hover-none:hover{background-color:transparent!important}
+.sgs-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.sgs-amber,.sgs-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.sgs-aqua,.sgs-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.sgs-blue,.sgs-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.sgs-light-blue,.sgs-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.sgs-brown,.sgs-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.sgs-cyan,.sgs-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.sgs-blue-grey,.sgs-hover-blue-grey:hover,.sgs-blue-gray,.sgs-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.sgs-green,.sgs-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.sgs-light-green,.sgs-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.sgs-indigo,.sgs-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.sgs-khaki,.sgs-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.sgs-lime,.sgs-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.sgs-orange,.sgs-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.sgs-deep-orange,.sgs-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.sgs-pink,.sgs-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.sgs-purple,.sgs-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.sgs-deep-purple,.sgs-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.sgs-red,.sgs-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.sgs-sand,.sgs-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.sgs-teal,.sgs-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.sgs-yellow,.sgs-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.sgs-white,.sgs-hover-white:hover{color:#000!important;background-color:#fff!important}
+.sgs-black,.sgs-hover-black:hover{color:#fff!important;background-color:#000!important}
+.sgs-grey,.sgs-hover-grey:hover,.sgs-gray,.sgs-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.sgs-light-grey,.sgs-hover-light-grey:hover,.sgs-light-gray,.sgs-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.sgs-dark-grey,.sgs-hover-dark-grey:hover,.sgs-dark-gray,.sgs-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.sgs-pale-red,.sgs-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.sgs-pale-green,.sgs-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.sgs-pale-yellow,.sgs-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.sgs-pale-blue,.sgs-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.sgs-text-amber,.sgs-hover-text-amber:hover{color:#ffc107!important}
+.sgs-text-aqua,.sgs-hover-text-aqua:hover{color:#00ffff!important}
+.sgs-text-blue,.sgs-hover-text-blue:hover{color:#2196F3!important}
+.sgs-text-light-blue,.sgs-hover-text-light-blue:hover{color:#87CEEB!important}
+.sgs-text-brown,.sgs-hover-text-brown:hover{color:#795548!important}
+.sgs-text-cyan,.sgs-hover-text-cyan:hover{color:#00bcd4!important}
+.sgs-text-blue-grey,.sgs-hover-text-blue-grey:hover,.sgs-text-blue-gray,.sgs-hover-text-blue-gray:hover{color:#607d8b!important}
+.sgs-text-green,.sgs-hover-text-green:hover{color:#4CAF50!important}
+.sgs-text-light-green,.sgs-hover-text-light-green:hover{color:#8bc34a!important}
+.sgs-text-indigo,.sgs-hover-text-indigo:hover{color:#3f51b5!important}
+.sgs-text-khaki,.sgs-hover-text-khaki:hover{color:#b4aa50!important}
+.sgs-text-lime,.sgs-hover-text-lime:hover{color:#cddc39!important}
+.sgs-text-orange,.sgs-hover-text-orange:hover{color:#ff9800!important}
+.sgs-text-deep-orange,.sgs-hover-text-deep-orange:hover{color:#ff5722!important}
+.sgs-text-pink,.sgs-hover-text-pink:hover{color:#e91e63!important}
+.sgs-text-purple,.sgs-hover-text-purple:hover{color:#9c27b0!important}
+.sgs-text-deep-purple,.sgs-hover-text-deep-purple:hover{color:#673ab7!important}
+.sgs-text-red,.sgs-hover-text-red:hover{color:#f44336!important}
+.sgs-text-sand,.sgs-hover-text-sand:hover{color:#fdf5e6!important}
+.sgs-text-teal,.sgs-hover-text-teal:hover{color:#009688!important}
+.sgs-text-yellow,.sgs-hover-text-yellow:hover{color:#d2be0e!important}
+.sgs-text-white,.sgs-hover-text-white:hover{color:#fff!important}
+.sgs-text-black,.sgs-hover-text-black:hover{color:#000!important}
+.sgs-text-grey,.sgs-hover-text-grey:hover,.sgs-text-gray,.sgs-hover-text-gray:hover{color:#757575!important}
+.sgs-text-light-grey,.sgs-hover-text-light-grey:hover,.sgs-text-light-gray,.sgs-hover-text-light-gray:hover{color:#f1f1f1!important}
+.sgs-text-dark-grey,.sgs-hover-text-dark-grey:hover,.sgs-text-dark-gray,.sgs-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.sgs-border-amber,.sgs-hover-border-amber:hover{border-color:#ffc107!important}
+.sgs-border-aqua,.sgs-hover-border-aqua:hover{border-color:#00ffff!important}
+.sgs-border-blue,.sgs-hover-border-blue:hover{border-color:#2196F3!important}
+.sgs-border-light-blue,.sgs-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.sgs-border-brown,.sgs-hover-border-brown:hover{border-color:#795548!important}
+.sgs-border-cyan,.sgs-hover-border-cyan:hover{border-color:#00bcd4!important}
+.sgs-border-blue-grey,.sgs-hover-border-blue-grey:hover,.sgs-border-blue-gray,.sgs-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.sgs-border-green,.sgs-hover-border-green:hover{border-color:#4CAF50!important}
+.sgs-border-light-green,.sgs-hover-border-light-green:hover{border-color:#8bc34a!important}
+.sgs-border-indigo,.sgs-hover-border-indigo:hover{border-color:#3f51b5!important}
+.sgs-border-khaki,.sgs-hover-border-khaki:hover{border-color:#f0e68c!important}
+.sgs-border-lime,.sgs-hover-border-lime:hover{border-color:#cddc39!important}
+.sgs-border-orange,.sgs-hover-border-orange:hover{border-color:#ff9800!important}
+.sgs-border-deep-orange,.sgs-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.sgs-border-pink,.sgs-hover-border-pink:hover{border-color:#e91e63!important}
+.sgs-border-purple,.sgs-hover-border-purple:hover{border-color:#9c27b0!important}
+.sgs-border-deep-purple,.sgs-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.sgs-border-red,.sgs-hover-border-red:hover{border-color:#f44336!important}
+.sgs-border-sand,.sgs-hover-border-sand:hover{border-color:#fdf5e6!important}
+.sgs-border-teal,.sgs-hover-border-teal:hover{border-color:#009688!important}
+.sgs-border-yellow,.sgs-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.sgs-border-white,.sgs-hover-border-white:hover{border-color:#fff!important}
+.sgs-border-black,.sgs-hover-border-black:hover{border-color:#000!important}
+.sgs-border-grey,.sgs-hover-border-grey:hover,.sgs-border-gray,.sgs-hover-border-gray:hover{border-color:#9e9e9e!important}
+.sgs-border-light-grey,.sgs-hover-border-light-grey:hover,.sgs-border-light-gray,.sgs-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.sgs-border-dark-grey,.sgs-hover-border-dark-grey:hover,.sgs-border-dark-gray,.sgs-hover-border-dark-gray:hover{border-color:#616161!important}
+.sgs-border-pale-red,.sgs-hover-border-pale-red:hover{border-color:#ffe7e7!important}.sgs-border-pale-green,.sgs-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.sgs-border-pale-yellow,.sgs-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.sgs-border-pale-blue,.sgs-hover-border-pale-blue:hover{border-color:#e7ffff!important}

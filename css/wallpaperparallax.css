@@ -1,0 +1,51 @@
+.wp-logo {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.wp-content {
+  position: absolute;
+  width: 100%;
+  max-width: 768px;
+  padding: 15px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFF;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .wp-content {
+    position: absolute;
+    width: 100%;
+    max-width: 768px;
+    padding: 10px;
+    text-align: center;
+    left: 50%;
+    top: 20%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #FFF;
+  } 
+  
+  .wp-logo {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-bottom: 10px;
+    
+  }
+  
+}
+
+ 
+
+
+  
+  

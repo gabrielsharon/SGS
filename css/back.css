@@ -1,0 +1,39 @@
+.backToTop{
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.backToTop i{
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #fff;
+}
+.backToTop i:hover{
+  color: #aaa;
+}
+
+#container{
+  height: 900px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .backToTop{
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 5px;
+    font-size: 3em;
+    z-index: 9999;
+    height: 50px;
+    width: 50px;
+    background-color: #111;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}

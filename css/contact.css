@@ -1,0 +1,148 @@
+
+body{
+    background-repeat: no-repeat;
+  background-size: 100%
+}
+.h {
+    text-align: left;
+    font-size: 17px;
+}
+
+#multistep_form {
+    
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: 100%;
+
+}
+
+/*progress header*/
+
+
+
+
+/*title*/
+.title-box {
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+.title-box h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin: 0;
+    font-family: cursive;
+    display: inline-block;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.title-box h2:before {
+    content: "";
+    background: #6ddc8b;
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+}
+.title-box h2:after {
+    content: "";
+    background: #6ddc8b;
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+}
+/*Input and Button*/
+.multistep-box {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 1px 1px 55px 3px rgba(255, 255, 255, 0.4);
+    padding: 30px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: absolute;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    iframe{
+        width: 100%;
+        height: 350;
+    }
+    
+    
+    .h {
+        text-align: left;
+        font-size: 13px; 
+    }
+    
+    #multistep_form {
+    
+        width: 270px;
+        margin: 0 auto;
+
+        height: 70%;
+    
+    }
+    
+    /*progress header*/
+    
+    
+    
+    
+    /*title*/
+    .title-box {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .title-box h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #2C3E50;
+        margin: 0;
+        font-family: cursive;
+        display: inline-block;
+        position: relative;
+        padding: 0 0 10px 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    .title-box h2:before {
+        content: "";
+        background: #6ddc8b;
+        width: 70px;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+    }
+    .title-box h2:after {
+        content: "";
+        background: #6ddc8b;
+        width: 50px;
+        height: 2px;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+    }
+  }

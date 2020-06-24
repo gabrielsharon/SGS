@@ -1,0 +1,88 @@
+
+.hd {
+  height: 100vh;
+  width:85%;
+  
+
+ /* background-color: #333;*/
+  background-image: url(../Image/prayer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0;     /*remove orginal color of img*/
+  
+}
+.hd::before {
+  
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(53, 62, 74, 0.8);
+}
+.hd-content {
+  position: absolute;
+  width: 100%;
+  max-width: 768px;
+  padding: 15px;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #FFF;
+}
+.hd-content p {
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.hd-logo {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.hd-cta {
+  display: inline-block;
+  text-decoration: none;
+  height: 60px;
+  line-height: 60px;
+  min-width: 220px;
+  padding: 0 15px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFF;
+  border: 2px solid #FFF;
+  transition: background-color .2s ease, color .2s ease;
+}
+.hd-cta:hover {
+  background-color: #fff;
+  color: #000;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .hd {
+    height: 70vh;
+    width:85%;
+  }
+   
+  .hd-content p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  .hd-logo {
+    font-size: 1.5em;
+  }
+
+
+  
+}

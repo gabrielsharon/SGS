@@ -1,0 +1,50 @@
+.fw {
+	position: relative;
+      }
+      
+      .fw img {
+	      position: absolute;
+      }
+      
+      .top {
+	      -webkit-animation-name: fade;
+		      animation-name: fade;
+	      -webkit-animation-timing-function: ease-in-out;
+		      animation-timing-function: ease-in-out;
+	      -webkit-animation-iteration-count: infinite;
+		      animation-iteration-count: infinite;
+	      -webkit-animation-duration: 5s;
+		      animation-duration: 5s;
+	      -webkit-animation-direction: alternate;
+		      animation-direction: alternate;
+      }
+      
+      @-webkit-keyframes fade {
+	      0% {
+		      opacity: 1;
+	      }
+	      25% {
+		      opacity: 1;
+	      }
+	      75% {
+		      opacity: 0;
+	      }
+	      100% {
+		      opacity: 0;
+	      }
+      }
+      
+      @keyframes fade {
+	      0% {
+		      opacity: 1;
+	      }
+	      25% {
+		      opacity: 1;
+	      }
+	      75% {
+		      opacity: 0;
+	      }
+	      100% {
+		      opacity: 0;
+	      }
+      }

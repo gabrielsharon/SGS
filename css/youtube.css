@@ -1,0 +1,29 @@
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 45;
+  width: 90%;
+  height: 100%;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 35;
+  width: 90%;
+  height: 100%;
+}
+}
