@@ -50,7 +50,7 @@
     .marquee {
     
         width: 275px;
-        height: 15px;
+        height: 25px;
         margin: 0 auto;
         overflow: hidden;
         white-space: nowrap;
